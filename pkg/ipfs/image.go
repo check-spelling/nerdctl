@@ -119,7 +119,7 @@ func ensureContentsOfIPFSImage(ctx context.Context, client *containerd.Client, i
 	} else if n == 0 {
 		return fmt.Errorf("image does not exist: %q", ref)
 	} else if n > 1 {
-		return fmt.Errorf("ambigious reference %q matched %d objects", ref, n)
+		return fmt.Errorf("ambiguous reference %q matched %d objects", ref, n)
 	}
 	cs := client.ContentStore()
 	childrenHandler := images.ChildrenHandler(cs)
