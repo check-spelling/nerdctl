@@ -5,7 +5,6 @@ ADDRHASH
 addrs
 Alloc
 alpinelinux
-amd
 anydata
 api
 apk
