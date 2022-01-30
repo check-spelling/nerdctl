@@ -152,7 +152,7 @@ func parseVolumeOptionsWithMountInfo(vType, src, optsRaw string, getMountInfoFun
 			}
 
 			// NOTE: Though OCI Runtime Spec doesn't explicitly describe, runc's default
-			//       of RootfsPropagtion is unix.MS_SLAVE | unix.MS_REC (i.e. runc applies
+			//       of RootfsPropagation is unix.MS_SLAVE | unix.MS_REC (i.e. runc applies
 			//       "slave" to all mount points in the container recursively). This ends
 			//       up marking the bind src directories "slave" and preventing it to shared
 			//      with the host. So we set RootfsPropagation to "shared" here.
