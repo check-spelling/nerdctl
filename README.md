@@ -648,7 +648,7 @@ Flags:
 ### :whale: nerdctl update
 Update configuration of one or more containers.
 
-Usage: `nerctl update [OPTIONS] CONTAINER [CONTAINER...]`
+Usage: `nerdctl update [OPTIONS] CONTAINER [CONTAINER...]`
 
 - :whale: `--cpus`: Number of CPUs
 - :whale: `--cpu-quota`: Limit the CPU CFS (Completely Fair Scheduler) quota
