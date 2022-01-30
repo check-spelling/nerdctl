@@ -154,7 +154,7 @@ func parseVolumeOptionsWithMountInfo(vType, src, optsRaw string, getMountInfoFun
 			// NOTE: Though OCI Runtime Spec doesn't explicitly describe, runc's default
 			//       of RootfsPropagtion is unix.MS_SLAVE | unix.MS_REC (i.e. runc applies
 			//       "slave" to all mount points in the container recursively). This ends
-			//       up marking the bind src directories "slave" and priventing it to shared
+			//       up marking the bind src directories "slave" and preventing it to shared
 			//      with the host. So we set RootfsPropagation to "shared" here.
 			//
 			// See also:
@@ -197,7 +197,7 @@ func parseVolumeOptionsWithMountInfo(vType, src, optsRaw string, getMountInfoFun
 			// No propagation is specfied to this bind mount.
 			// NOTE: When RootfsPropagation is set (e.g. by other bind mount option), that
 			//       propagation mode will be applied to this bind mount as well. So we need
-			//       to set "rprivate" explicitly for priventing this bind mount from unexpectedly
+			//       to set "rprivate" explicitly for preventing this bind mount from unexpectedly
 			//       shared with the host. This behaviour is compatible to docker:
 			//       https://github.com/moby/moby/blob/v20.10.7/volume/mounts/linux_parser.go#L320-L322
 			//
