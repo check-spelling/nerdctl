@@ -194,7 +194,7 @@ func parseVolumeOptionsWithMountInfo(vType, src, optsRaw string, getMountInfoFun
 		case "private", "rprivate":
 			pFlag = got
 		default:
-			// No propagation is specfied to this bind mount.
+			// No propagation is specified to this bind mount.
 			// NOTE: When RootfsPropagation is set (e.g. by other bind mount option), that
 			//       propagation mode will be applied to this bind mount as well. So we need
 			//       to set "rprivate" explicitly for preventing this bind mount from unexpectedly
