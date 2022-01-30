@@ -417,7 +417,7 @@ Verify flags:
 
 Other `docker run` flags are on plan but unimplemented yet.
 <details>
-<summary> Clicke here to show all the `docker run` flags (Docker 20.10)</summary>
+<summary> Click here to show all the `docker run` flags (Docker 20.10)</summary>
 
 <p>
 
