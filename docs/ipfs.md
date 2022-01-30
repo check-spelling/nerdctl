@@ -189,7 +189,7 @@ nerdctl compose build --ipfs
 ### Encryption
 
 You can distribute [encrypted images](./ocicrypt.md) on IPFS using OCIcrypt.
-Please see [`/docs/ocycrypt.md`](./ocicrypt.md) for details about how to encrypt and decrypt an image.
+Please see [`/docs/ocicrypt.md`](./ocicrypt.md) for details about how to encrypt and decrypt an image.
 
 Same as normal images, the encrypted image can be pushed to IPFS using `ipfs://` prefix.
 
@@ -202,7 +202,7 @@ INFO[0000] ensuring image contents
 bafkreifajsysbvhtgd7fdgrfesszexdq6v5zbj5y2jnjfwxdjyqws2s3s4
 ```
 
-You can pull the encrypted image from IPFS using `ipfs://` prefix and can decrypt it in the same way as described in [`/docs/ocycrypt.md`](./ocicrypt.md).
+You can pull the encrypted image from IPFS using `ipfs://` prefix and can decrypt it in the same way as described in [`/docs/ocicrypt.md`](./ocicrypt.md).
 
 ```console
 > nerdctl pull --unpack=false ipfs://bafkreifajsysbvhtgd7fdgrfesszexdq6v5zbj5y2jnjfwxdjyqws2s3s4
