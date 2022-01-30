@@ -227,7 +227,7 @@ Thus the container can startup without waiting for the entire image contents to 
 You can see faster container cold-start.
 
 To use this feature, you need to enable Stargz Snapshotter following [`/docs/stargz.md`](./stargz.md).
-You also need to add the following configuration to `config.toml` of Stargz Snapsohtter (typically located at `/etc/containerd-stargz-grpc/config.toml`).
+You also need to add the following configuration to `config.toml` of Stargz Snapshotter (typically located at `/etc/containerd-stargz-grpc/config.toml`).
 
 ```toml
 ipfs = true
