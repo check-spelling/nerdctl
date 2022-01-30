@@ -203,7 +203,7 @@ func parseVolumeOptionsWithMountInfo(vType, src, optsRaw string, getMountInfoFun
 			//
 			// TODO: directories managed by containerd (e.g. /var/lib/containerd, /run/containerd, ...)
 			//       should be marked as "rslave" instead of "rprivate". This is because allowing
-			//       containers to hold their private bind mounts will prevent containred from remove
+			//       containers to hold their private bind mounts will prevent containerd from remove
 			//       them. See also: https://github.com/moby/moby/pull/36055.
 			//       Unfortunately, containerd doesn't expose the locations of directories where it manages.
 			//       Current workaround is explicitly add "rshared" or "rslave" option to these bind mounts.
