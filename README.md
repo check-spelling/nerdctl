@@ -872,7 +872,7 @@ To see non-encrypted information, run `nerdctl image inspect --mode=native --pla
 Flags:
 -  `--recipient=<RECIPIENT>`      : Recipient of the image is the person who can decrypt (e.g., `jwe:mypubkey.pem`)
 -  `--dec-recipient=<RECIPIENT>`  : Recipient of the image; used only for PKCS7 and must be an x509 certificate
--  `--key=<KEY>[:<PWDESC>]`       : A secret key's filename and an optional password separated by colon, PWDDESC=<password>|pass:<password>|fd=<file descriptor>|filename
+-  `--key=<KEY>[:<PWDDESC>]`      : A secret key's filename and an optional password separated by colon, PWDDESC=<password>|pass:<password>|fd=<file descriptor>|filename
 -  `--gpg-homedir=<DIR>`          : The GPG homedir to use; by default gpg uses ~/.gnupg
 -  `--gpg-version=<VERSION>`      : The GPG version ("v1" or "v2"), default will make an educated guess
 -  `--platform=<PLATFORM>`        : Convert content for a specific platform
@@ -892,7 +892,7 @@ nerdctl image decrypt --key=mykey.pem example.com/foo:encrypted foo:decrypted
 
 Flags:
 -  `--dec-recipient=<RECIPIENT>`  : Recipient of the image; used only for PKCS7 and must be an x509 certificate
--  `--key=<KEY>[:<PWDESC>]`       : A secret key's filename and an optional password separated by colon, PWDDESC=<password>|pass:<password>|fd=<file descriptor>|filename
+-  `--key=<KEY>[:<PWDDESC>]`      : A secret key's filename and an optional password separated by colon, PWDDESC=<password>|pass:<password>|fd=<file descriptor>|filename
 -  `--gpg-homedir=<DIR>`          : The GPG homedir to use; by default gpg uses ~/.gnupg
 -  `--gpg-version=<VERSION>`      : The GPG version ("v1" or "v2"), default will make an educated guess
 -  `--platform=<PLATFORM>`        : Convert content for a specific platform
