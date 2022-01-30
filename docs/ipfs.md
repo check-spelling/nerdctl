@@ -150,7 +150,7 @@ As of now, BuildKit doesn't support `ipfs://` prefix so nerdctl achieves builds 
 This registry converts registry API requests to IPFS operations.
 So IPFS-agnostic tools can pull images from IPFS via this registry.
 
-When you specify `--ipfs` option to `nerdctl bulid`, it automatically starts the registry backed by the IPFS repo of the current `$IPFS_PATH`.
+When you specify `--ipfs` option to `nerdctl build`, it automatically starts the registry backed by the IPFS repo of the current `$IPFS_PATH`.
 By default, nerdctl exposes the registry at `localhost:5050`.
 You can change the address and can manually restart the registry using `nerdctl ipfs registry up` and `nerdctl ipfs registry down`.
 
